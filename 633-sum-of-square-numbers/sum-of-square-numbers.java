@@ -3,22 +3,17 @@ class Solution {
         long i=0;
         while(i*i<=c)
         {
-            long j=0;
-            long k=c-(int)i*i;
-            long d=k;
+            long j=i;
+            long k=(int)Math.sqrt(c);
             
             while(j<=k)
             {
-                if(j>k)
-                return false;
-                
                 long mid=k-(k-j)/2;
-                if((mid*mid)==d)
+                if((mid*mid+i*i)==c)
                 {
-                  
                     return true;
                 }
-                else if((mid*mid)<d)
+                else if((mid*mid+i*i)<c)
                 {
                     j=mid+1;
                 }
