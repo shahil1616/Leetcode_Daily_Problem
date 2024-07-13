@@ -35,17 +35,11 @@ class Solution {
             }
         }
         int arr[]= new int[stack.size()];
-        int i=0;
-        Stack<Integer> s= new Stack<>();
-        
+        int i=stack.size()-1;
         while(!stack.isEmpty())
         {
-            s.push(stack.pop());
+            arr[i--]=stack.pop();
         } 
-        while(!s.isEmpty())
-        {
-            arr[i++]=s.pop();
-        }
         return arr;
         
     }
