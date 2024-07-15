@@ -67,7 +67,7 @@ class Solution {
             }
         }
        
-       System.out.println(root);
+    //    System.out.println(root);
         return solve(root);
     }
     public TreeNode solve(int root)
